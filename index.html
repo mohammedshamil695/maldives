@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+        <title>Tourism Of Maldeves</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="hero">
+            <video autoplay loop muted plays-inline id="backvideo">
+                <source src="C:\Users\DELL\Desktop\maldevsvdo.mp4" type="video/mp4">
+            </video>
+            <div class="logo">
+                <img src="C:\Users\DELL\Desktop\logo.png">
+            </div>
+            <div class="sidebar">
+                <div class="textbox">
+                    <h1>GOLDEN RESORT</h1>
+                    <h4>LUXURY LIVING</h4>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="content">
+                <h1>Maldives</h1>
+                <p>Very nice appartments in the heart of maldives</p>
+                <div class="btn" id="playBtn">
+                    <img src="C:\Users\DELL\Desktop\play.png" id="icon">Watch Vedio
+                </div>
+            </div>
+        </div>
+
+<script>
+       var backvideo = document.getElementById('backvideo');
+       var playBtn = document.getElementById('playBtn');
+       var icon = document.getElementById('icon');
+
+       playBtn.onclick = function(){
+           backvideo.style.display = "block";
+
+           if(backvideo.paused){
+               backvideo.play();
+               icon.src = "C:/Users/DELL/Desktop/pause.png";
+           }
+           else{
+               backvideo.pause();
+               icon.src = "C:/Users/DELL/Desktop/play.png";
+           }
+       }
+
+
+
+</script>
+
+
+    </body>
+</html>
